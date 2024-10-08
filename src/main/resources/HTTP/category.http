@@ -1,0 +1,31 @@
+### CREATE
+POST localhost:7777/category/create
+Content-Type: application/json
+
+{
+  "orderNum": 1,
+  "nameEn": "ha",
+  "nameRu": "рф",
+  "nameUz": "da"
+}
+
+### UPDATE
+PUT localhost:7777/category/update/1
+Content-Type: application/json
+
+{
+  "orderNum": 1,
+  "nameEn": "aa",
+  "nameRu": "рф",
+  "nameUz": "aa"
+}
+
+### GET ALL
+GET localhost:7777/category/getAll
+
+### DELETE
+DELETE localhost:7777/category/delete/1
+
+### GET BY LANGUAGE
+GET localhost:7777/category/getByLanguage?lang=ru
+

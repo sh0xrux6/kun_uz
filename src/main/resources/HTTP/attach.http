@@ -1,0 +1,12 @@
+###Attach upload
+POST http://localhost:7777/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="random.jpg"
+
+C:\Users\user\Desktop\random.jpg
+
+###Get
+
+GET localhost:7777/attach/

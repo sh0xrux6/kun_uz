@@ -1,0 +1,30 @@
+### CREATE
+POST localhost:7777/articleType/create
+Content-Type:application/json
+
+{
+  "orderNum": 1,
+  "nameEn": "nia",
+  "nameRu": "ad",
+  "nameUz": "afg"
+}
+
+### UPDATE
+PUT localhost:7777/articleType/update/1
+Content-Type: application/json
+
+{
+  "orderNum": 1,
+  "nameEn": "ha",
+  "nameRu": "рф",
+  "nameUz": "da"
+}
+
+### GET ALL
+GET localhost:7777/articleType/getAll
+
+### DELETE
+DELETE localhost:7777/articleType/delete/1
+
+### GET BY LANG
+GET localhost:7777/articleType/getByLanguage?lang=ru

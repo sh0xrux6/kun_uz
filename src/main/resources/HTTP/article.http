@@ -1,0 +1,13 @@
+### CREATEb (title,description,content,shared_count,image_id, region_id,category_id)
+POST localhost:7777/article/create
+Content-Type: application/json
+Authorization: B
+
+{
+  "title": "news",
+  "description": "about news",
+  "content": "news",
+  "imageId": 1,
+  "region": {"id": 1},
+  "category": {"id":  1}
+}

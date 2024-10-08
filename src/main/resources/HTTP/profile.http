@@ -1,0 +1,32 @@
+POST localhost:7777/profile/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjUwOTEzMDksImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MjUwOTQ5MDksImlzcyI6Imt1bl91eiB0ZXN0IHBvcnRhbGkifQ.iCmLjXFCl4Ign9zQB4NyDneXQgc71bZ0V-dOlfY_ZtrZ9qjPScPZyTJOAplOxRJ7L5IzYYtNED3zKBos03skig
+
+{
+
+  "name" : "USER",
+  "surname": "USER",
+  "email": "User@gmail.com",
+  "phone": "998097751",
+  "password": "123456789",
+  "role": "USER"
+}
+
+### UPDATE
+PUT localhost:7777/profile/update/admin/1
+Content-Type: application/json
+
+{
+  "name": "SSS"
+}
+
+### UPDATE DETAIL
+PUT localhost:7777/profile/update/1
+Content-Type: application/json
+
+{
+  "name": "Adm",
+  "surname": "Adm"
+}
+
+

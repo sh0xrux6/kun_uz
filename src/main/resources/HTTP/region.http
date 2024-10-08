@@ -1,0 +1,30 @@
+### CREATE
+POST localhost:7777/region/create
+Content-Type: application/json
+
+{
+  "orderNum": 1,
+  "nameEn": "en",
+  "nameRu": "ru",
+  "nameUz": "uz"
+}
+
+###
+PUT localhost:7777/region/update/1
+Content-Type: application/json
+
+{
+  "orderNum": 1,
+  "nameEn": "english",
+  "nameRu": "русский",
+  "nameUz": "o'zbekcha"
+}
+
+### GET ALL
+GET localhost:7777/region/getAll
+
+### GET BY LANG
+GET localhost:7777/region/getByLanguage?lang=en
+
+### DELETE
+DELETE localhost:7777/region/delete/1
